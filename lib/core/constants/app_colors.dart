@@ -8,5 +8,10 @@ class AppColors {
   static const lightBeige = Color(0xffF3DADF);
   static const whiteBackGround = Color(0xfff8f8f8);
   static const primaryOrange = Color(0xffF1916D);
+  static const greyTextColor = Color(0xffB0B0B0);
+  static const greyColor = Color(0xff6F6F6F);
+  static const grayBorderColor= Color(0xffDADADA);
+  static const whiteTextColor= Color(0xffdadada);
+
 
 }
