@@ -24,5 +24,14 @@
  "sign_in": "سجل الدخول لحسابك",
  "have_account": "هل لديك حساب؟",
  "dont_have_account": "ليس لديك حساب؟",
- "forget_password": "هل نسيت كلمه المرور؟"
+ "forget_password": "هل نسيت كلمه المرور؟",
+ "full_name": "الاسم بالكامل",
+ "enter_full_name": "ادخل الاسم بالكامل",
+ "create_account": "إنشاء حساب",
+ "sign_up_account": "قم بالتسجيل للوصول إلى حسابك.",
+ "sign_up_account_validation": "يرجى إدخال اسمك الكامل.",
+ "email_validation": "يرجى إدخال عنوان بريد إلكتروني صالح.",
+ "password_validation": "يجب أن تكون كلمة المرور مكونة من 6 أحرف على الأقل.",
+ "reenter_password_validation": "كلمات المرور غير متطابقة.",
+ "reenter_password": "اعد ادخال كلمه المرور"
 }

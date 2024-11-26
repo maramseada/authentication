@@ -24,6 +24,15 @@
   "sign_in": "Sign in to your Account",
   "have_account": "Already have an account?",
   "dont_have_account": "Don't have an account?",
-  "forget_password": "Forget Password?"
+  "forget_password": "Forget Password?",
+  "full_name": "Full Name",
+  "enter_full_name": "Enter your full name",
+  "create_account": "Create Account",
+  "sign_up_account": "Sign up to access your account.",
+  "full_name_validation": "Please enter your full name.",
+  "email_validation": "Please enter a valid email address.",
+  "password_validation": "Password must be at least 6 characters.",
+  "reenter_password": "Re-enter Password",
+  "reenter_password_validation": "Passwords do not match."
 
 }
