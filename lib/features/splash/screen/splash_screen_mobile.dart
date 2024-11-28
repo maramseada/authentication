@@ -12,20 +12,19 @@ class SplashScreenMobile extends StatelessWidget {
     return Stack(
       children: [
 
-        Positioned(
-          bottom: 300,
-          right: 50,
-          child: Image.asset(
-            'assets/images/light.png',
-            height: 100,
-          ),
-        ),
+        // Positioned(
+        //   bottom: 300,
+        //   right: 50,
+        //   child: Image.asset(
+        //     'assets/images/light.png',
+        //     height: 100,
+        //   ),
+        // ),
         Center(
           child: Padding(
             padding: const EdgeInsets.all(40),
-            child: SvgPicture.asset(
-              AppImages.logo,
-              color: AppColors.whiteBackGround,
+            child: Image.asset(
+             'assets/images/logo.png',
             ),
           ),
         ),

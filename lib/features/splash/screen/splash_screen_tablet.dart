@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-
-import '../../../core/constants/app_images.dart';
 import '../../../core/constants/constants.dart';
 
 class SplashScreenTablet extends StatelessWidget {
@@ -30,9 +28,8 @@ class SplashScreenTablet extends StatelessWidget {
         Center(
           child: Padding(
             padding: const EdgeInsets.all(40),
-            child: SvgPicture.asset(
-              AppImages.logo,
-              color: Colors.white,
+            child: Image.asset(
+              'assets/images/logo.png',
               width: ratio * 550,
             ),
           ),

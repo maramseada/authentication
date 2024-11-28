@@ -33,6 +33,8 @@
   "email_validation": "Please enter a valid email address.",
   "password_validation": "Password must be at least 6 characters.",
   "reenter_password": "Re-enter Password",
-  "reenter_password_validation": "Passwords do not match."
-
+  "reenter_password_validation": "Passwords do not match.",
+  "remember_password": "Remembered your password?",
+  "forget_password_desc": "Enter your email address below, and we will send you instructions to reset your password.",
+  "send_otp": "Send otp"
 }

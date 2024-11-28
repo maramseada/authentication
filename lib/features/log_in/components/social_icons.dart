@@ -9,7 +9,7 @@ class SocialIcons extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Material(
-      elevation: 4, // Adjust elevation for shadow intensity
+      elevation: 2, // Adjust elevation for shadow intensity
       shape: const CircleBorder(),
       shadowColor: Colors.black54, // Customize shadow color
       child: Container(

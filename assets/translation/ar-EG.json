@@ -33,5 +33,8 @@
  "email_validation": "يرجى إدخال عنوان بريد إلكتروني صالح.",
  "password_validation": "يجب أن تكون كلمة المرور مكونة من 6 أحرف على الأقل.",
  "reenter_password_validation": "كلمات المرور غير متطابقة.",
- "reenter_password": "اعد ادخال كلمه المرور"
+ "reenter_password": "اعد ادخال كلمه المرور",
+ "forget_password_desc": "أدخل بريدك الإلكتروني أدناه، وسنرسل لك تعليمات لإعادة تعيين كلمة المرور",
+ "send_otp": "إرسال رمز التحقق",
+ "remember_password": "هل تذكرت كلمة المرور؟"
 }

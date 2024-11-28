@@ -6,11 +6,9 @@ import 'package:gap/gap.dart';
 
 import '../../../core/components/custom_button.dart';
 import '../../../core/components/custom_text_field.dart';
-import '../../../core/components/line_text.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/constants.dart';
 import '../../../core/constants/font_styles.dart';
-import '../../log_in/components/social_icons.dart';
 
 class SignUpView extends StatelessWidget {
   const SignUpView({super.key});
