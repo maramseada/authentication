@@ -1,4 +1,5 @@
 
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/cupertino.dart';
 
 import '../constants/constants.dart';
@@ -38,6 +39,6 @@ extension StringExtension on String {
       isNotEmpty ? this[0].toUpperCase() + substring(1) : this;
 }
 
-// extension IsEn on Widget {
-//   bool get isEn => GlobalRouter.currentContext!.locale.languageCode == 'en';
-// }
+extension IsEn on Widget {
+  bool get isEn => GlobalRouter.currentContext!.locale.languageCode == 'en';
+}

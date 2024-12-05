@@ -1,15 +1,12 @@
 import 'package:authentication_app/core/components/line_text.dart';
 import 'package:authentication_app/core/constants/app_colors.dart';
-import 'package:authentication_app/core/router/router.dart';
-import 'package:authentication_app/features/forget_password/screens/forget_password.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import '../../../core/components/custom_button.dart';
-import '../../../core/components/custom_text_field.dart';
 import '../../../core/constants/constants.dart';
 import '../../../core/constants/font_styles.dart';
+import '../components/log_in_form.dart';
 import '../components/sign_up_row.dart';
 import '../components/social_icons.dart';
 
@@ -64,56 +61,8 @@ class LoginView extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Gap(50 * ratio),
-                    Text(
-                      'email'.tr(),
-                      style: AppStyles.styleRegular14(
-                          context: context, color: AppColors.darkBlue),
-                    ),
-                    Gap(ratio * 5),
-                    CustomTextField(
-                      hint: 'pleaseEnterEmail'.tr(),
-                      hintStyle: AppStyles.style40016(
-                          context: context, color: AppColors.greyTextColor),
-                      type: TextInputType.emailAddress,
-                      borderColor: AppColors.greyTextColor,
-                    ),
-                    Gap(ratio * 16),
-                    Text(
-                      'password'.tr(),
-                      style: AppStyles.styleRegular14(
-                          context: context, color: AppColors.darkBlue),
-                    ),
-                    Gap(ratio * 5),
-                    CustomTextField(
-                      hint: '********',
-                      hintStyle: AppStyles.styleRegular18(
-                          context: context, color: AppColors.greyTextColor),
-                      borderColor: AppColors.greyTextColor,
-                      type: TextInputType.visiblePassword,
-                    ),
-                    Gap(ratio * 8),
-                    Align(
-                        alignment: AlignmentDirectional.centerEnd,
-                        child: InkWell(
-                          onTap: () {
-                            GlobalRouter.navigateTo(const ForgetPassword());
-                          },
-                          child: Text(
-                            'forget_password'.tr(),
-                            style: AppStyles.styleRegular14(
-                                decoration: TextDecoration.underline,
-                                context: context,
-                                color: AppColors.lightPurple),
-                          ),
-                        )),
-                    Gap(ratio * 16),
-                    CustomButton(
-                      backgroundColor: AppColors.lightPurple,
-                      text: 'login'.tr(),
-                      radius: 6,
-                      onPressed: () {},
-                    ),
-                    Gap(ratio * 32),
+                    LogInForm(),
+                    Gap(ratio * 22),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 8.0),
                       child: LineText(text: 'login_with'.tr(), padding: 5),

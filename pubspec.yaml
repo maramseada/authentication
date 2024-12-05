@@ -32,8 +32,13 @@ dependencies:
     sdk: flutter
   flutter_svg: ^2.0.10+1
   flutter_screenutil: 5.9.3
+  flutter_bloc: ^8.1.6
+  dio: ^5.4.3+1
   gap: ^3.0.1
   easy_localization:
+  hive_flutter:
+  smooth_page_indicator: ^1.2.0+3
+
   shared_preferences:
 # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.

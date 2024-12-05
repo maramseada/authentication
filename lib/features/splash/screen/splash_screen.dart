@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:authentication_app/features/on_boarding/screens/on_boarding_view.dart';
 import 'package:authentication_app/features/splash/screen/splash_screen_mobile.dart';
 import 'package:authentication_app/features/splash/screen/splash_screen_tablet.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +22,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
       Timer(const Duration(seconds: 5),
-              () => GlobalRouter.navigateToFadeAnimation( const LoginView()));
+              () => GlobalRouter.navigateToFadeAnimation( const OnBoardingView()));
 
   }
   @override

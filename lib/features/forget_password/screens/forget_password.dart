@@ -9,15 +9,19 @@ import 'package:gap/gap.dart';
 import '../../../core/components/custom_text_field.dart';
 import '../../../core/constants/constants.dart';
 import '../../../core/router/router.dart';
+import '../otp_bottom_dialog.dart';
 
 class ForgetPassword extends StatelessWidget {
-  const ForgetPassword({super.key});
+  ForgetPassword({super.key});
+  final _formKey = GlobalKey<FormState>(); // Global key for the form
 
   @override
   Widget build(BuildContext context) {
+    TextEditingController emailController = TextEditingController();
     return Scaffold(
       backgroundColor: AppColors.darkBlue,
-      resizeToAvoidBottomInset: true, // This adjusts the layout for the keyboard
+      resizeToAvoidBottomInset:
+          true, // This adjusts the layout for the keyboard
       body: Column(
         children: [
           Expanded(
@@ -29,7 +33,8 @@ class ForgetPassword extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    const Spacer(),    Text(
+                    const Spacer(),
+                    Text(
                       'forget_password'.tr(),
                       style: AppStyles.styleBold30(
                           context: context, color: Colors.white),
@@ -73,17 +78,48 @@ class ForgetPassword extends StatelessWidget {
                         context: context, color: AppColors.darkBlue),
                   ),
                   Gap(ratio * 8),
-                  CustomTextField(
-                    hint: 'pleaseEnterEmail'.tr(),
-                    hintStyle: AppStyles.style40016(
-                        context: context, color: AppColors.greyTextColor),
-                    type: TextInputType.emailAddress,
-                    borderColor: AppColors.greyTextColor,
+                  Form(
+                    key: _formKey,
+                    child: CustomTextField(
+                      controller: emailController,
+                      hint: 'pleaseEnterEmail'.tr(),
+                      hintStyle: AppStyles.style40016(
+                          context: context, color: AppColors.greyTextColor),
+                      borderColor: AppColors.greyTextColor,
+                      type: TextInputType.emailAddress,
+                      validator: (value) {
+                        if (value == null || value.isEmpty) {
+                          return 'please_fill_field'.tr();
+                        }
+                        if (!regex.hasMatch(value)) {
+                          return 'enter_valid_email'.tr();
+                        }
+                        return null;
+                      },
+                    ),
                   ),
                   Gap(ratio * 18),
                   CustomButton(
                     text: 'send_otp'.tr(),
-                    onPressed: () {},
+                    onPressed: () {
+                      if (_formKey.currentState!.validate()) {
+                        showModalBottomSheet(
+                          context: context,
+                          isScrollControlled: true,
+                          shape: const RoundedRectangleBorder(
+                            borderRadius: BorderRadius.vertical(
+                              top: Radius.circular(16),
+                            ),
+                          ),
+                          builder: (BuildContext context) {
+                            return OtpBottomDialog();
+                          },
+                        );
+
+                      } else {
+                        print('Form is invalid.');
+                      }
+                    },
                     radius: 10,
                   ),
                   const Spacer(),

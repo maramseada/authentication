@@ -36,5 +36,17 @@
   "reenter_password_validation": "Passwords do not match.",
   "remember_password": "Remembered your password?",
   "forget_password_desc": "Enter your email address below, and we will send you instructions to reset your password.",
-  "send_otp": "Send otp"
+  "send_otp": "Send otp",
+  "please_fill_field": "Please fill this field to continue.",
+  "check_mail_desc": "We’ve sent a One-Time Password (OTP) to your email address. Please check your inbox.",
+  "check_mail": "Check your e-mail",
+  "close": "Done",
+  "onboarding1": "Empowering your journey with teamwork and leadership.",
+  "onboarding2": "Together, we rise! Support and mentorship are just a step away.",
+  "onboarding3": "Your growth is our priority. Let’s climb to success.",
+  "skip": "Skip",
+  "get_started": "Get Started"
+
+
+
 }

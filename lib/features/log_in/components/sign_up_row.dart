@@ -23,7 +23,7 @@ class SignUpRow extends StatelessWidget {
         Gap(10 * ratio),
         InkWell(
           onTap: () {
-            GlobalRouter.navigateTo(const SignUpView());
+            GlobalRouter.navigateTo( SignUpView());
           },
           child: Text(
             'signup'.tr(),
