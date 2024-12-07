@@ -59,10 +59,11 @@ class _LanguageScreenMobileState extends State<LanguageScreenMobile> {
             child: Container(
               padding: EdgeInsets.symmetric(horizontal: 16 * ratio),
               width: double.infinity,
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(20),
-              ),
+              decoration:const BoxDecoration(
+                color: Colors.white,  borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(20),
+                topRight: Radius.circular(20),
+              ),),
               child: SingleChildScrollView(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
