@@ -30,12 +30,11 @@ class SignUpForm extends StatelessWidget {
             'full_name'.tr(),
             style: isTablet
                 ? AppStyles.styleRegular18(
-                context: context, color: AppColors.darkBlue)
+                    context: context, color: AppColors.darkBlue)
                 : AppStyles.styleRegular14(
-                context: context, color: AppColors.darkBlue),
-
+                    context: context, color: AppColors.darkBlue),
           ),
-          isTablet ? Gap(ratio * 10) :     Gap(ratio * 5),
+          isTablet ? Gap(ratio * 10) : Gap(ratio * 5),
           CustomTextField(
             hint: 'enter_full_name'.tr(),
             hintStyle: AppStyles.styleRegular14(
@@ -56,12 +55,11 @@ class SignUpForm extends StatelessWidget {
             'email'.tr(),
             style: isTablet
                 ? AppStyles.styleRegular18(
-                context: context, color: AppColors.darkBlue)
+                    context: context, color: AppColors.darkBlue)
                 : AppStyles.styleRegular14(
-                context: context, color: AppColors.darkBlue),
-
+                    context: context, color: AppColors.darkBlue),
           ),
-          isTablet ? Gap(ratio * 10) :     Gap(ratio * 5),
+          isTablet ? Gap(ratio * 10) : Gap(ratio * 5),
           CustomTextField(
             controller: emailController,
             hint: 'pleaseEnterEmail'.tr(),
@@ -84,12 +82,11 @@ class SignUpForm extends StatelessWidget {
             'password'.tr(),
             style: isTablet
                 ? AppStyles.styleRegular18(
-                context: context, color: AppColors.darkBlue)
+                    context: context, color: AppColors.darkBlue)
                 : AppStyles.styleRegular14(
-                context: context, color: AppColors.darkBlue),
-
+                    context: context, color: AppColors.darkBlue),
           ),
-          isTablet ? Gap(ratio * 10) :     Gap(ratio * 5),
+          isTablet ? Gap(ratio * 10) : Gap(ratio * 5),
           CustomTextField(
             hint: '********',
             controller: passwordController,
@@ -112,12 +109,11 @@ class SignUpForm extends StatelessWidget {
             'reenter_password'.tr(),
             style: isTablet
                 ? AppStyles.styleRegular18(
-                context: context, color: AppColors.darkBlue)
+                    context: context, color: AppColors.darkBlue)
                 : AppStyles.styleRegular14(
-                context: context, color: AppColors.darkBlue),
-
+                    context: context, color: AppColors.darkBlue),
           ),
-          isTablet ? Gap(ratio * 10) :     Gap(ratio * 5),
+          isTablet ? Gap(ratio * 10) : Gap(ratio * 5),
           CustomTextField(
             hint: '********',
             controller: reEnterPasswordController,
@@ -145,15 +141,16 @@ class SignUpForm extends StatelessWidget {
             text: 'signup'.tr(),
             style: isTablet
                 ? AppStyles.styleRegular22(
-              context: context,
-              color: AppColors.whiteTextColor,
-            )
-                : null,   radius: 6,
+                    context: context,
+                    color: AppColors.whiteTextColor,
+                  )
+                : null,
+            radius: 6,
             onPressed: () {
               if (_formKey.currentState!.validate()) {
-                print('kuh');
+                debugPrint('kuh');
               } else {
-                print('Form is invalid.');
+                debugPrint('Form is invalid.');
               }
             },
           ),
@@ -163,9 +160,11 @@ class SignUpForm extends StatelessWidget {
             children: [
               Text(
                 'have_account'.tr(),
-                style:  isTablet? AppStyles.styleRegular20(
-    context: context,)
-        : AppStyles.styleRegular14(context: context),
+                style: isTablet
+                    ? AppStyles.styleRegular20(
+                        context: context,
+                      )
+                    : AppStyles.styleRegular14(context: context),
               ),
               Gap(10 * ratio),
               InkWell(
@@ -176,10 +175,9 @@ class SignUpForm extends StatelessWidget {
                   'login'.tr(),
                   style: isTablet
                       ? AppStyles.styleBold20(
-                      context: context, color: AppColors.primaryBlue)
+                          context: context, color: AppColors.primaryBlue)
                       : AppStyles.styleBold14(
-                      context: context, color: AppColors.primaryBlue),
-
+                          context: context, color: AppColors.primaryBlue),
                 ),
               ),
             ],

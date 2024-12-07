@@ -4,15 +4,16 @@ import 'package:authentication_app/core/helpers/extentions.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
-import '../../core/components/custom_button.dart';
-import '../../core/constants/app_colors.dart';
+import '../../../core/components/custom_button.dart';
+import '../../../core/constants/app_colors.dart';
 
 class OtpBottomDialog extends StatelessWidget {
   const OtpBottomDialog({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container(   decoration:const BoxDecoration(
+    return Container(
+      decoration:const BoxDecoration(
       color: Colors.white,  borderRadius: BorderRadius.only(
       topLeft: Radius.circular(20),
       topRight: Radius.circular(20),
@@ -45,17 +46,20 @@ class OtpBottomDialog extends StatelessWidget {
                     context: context, color: AppColors.greyTextColor)),
           ),
           const SizedBox(height: 24),
-          CustomButton(
-              radius: 10,
-              text: 'close'.tr(),
-              style:   isTablet
-            ? AppStyles.styleRegular20(
-            context: context,
-            color: AppColors.whiteTextColor,
-          )
-            : AppStyles.styleRegular14(
-                  context: context, color: Colors.white),
-              onPressed: () => Navigator.pop(context)),
+          Padding(
+            padding:  EdgeInsets.symmetric(horizontal:isTablet?20* ratio :0),
+            child: CustomButton(
+                radius: 10,
+                text: 'close'.tr(),
+                style:   isTablet
+              ? AppStyles.styleRegular20(
+              context: context,
+              color: AppColors.whiteTextColor,
+            )
+              : AppStyles.styleRegular14(
+                    context: context, color: Colors.white),
+                onPressed: () => Navigator.pop(context)),
+          ),
           const SizedBox(height: 16),
         ],
       ),

@@ -132,9 +132,9 @@ class LogInForm extends StatelessWidget {
             radius: 6,
             onPressed: () {
               if (_formKey.currentState!.validate()) {
-                print('kuh');
+                debugPrint('kuh');
               } else {
-                print('Form is invalid.');
+                debugPrint('Form is invalid.');
               }
             },
           ),
