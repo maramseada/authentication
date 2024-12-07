@@ -22,7 +22,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
     'assets/images/onboarding2.jpg',
     'assets/images/onboarding3.jpg'
   ];
-  final onBoardingLabelList = ['onboarding1'.tr(), 'onboarding1'.tr(), 'onboarding1'.tr()];
+  final onBoardingLabelList = ['onboarding1'.tr(), 'onboarding2'.tr(), 'onboarding3'.tr()];
   // final onBoardingDescriptionList = ['description'.tr(), 'features_description'.tr(), 'contact_description'.tr()];
   @override
   void initState() {

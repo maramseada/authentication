@@ -46,7 +46,7 @@ class _OnBoardingViewMobileState extends State<OnBoardingViewMobile> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Gap(ratio * 100),
-              Image.asset(widget.onBoardingImagesList[index], height: height* .43,),
+              Image.asset(widget.onBoardingImagesList[index], height: height* .43,fit: BoxFit.cover,),
               Gap(ratio * 20),
               Padding(
                 padding: EdgeInsets.symmetric(

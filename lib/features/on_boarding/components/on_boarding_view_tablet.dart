@@ -44,12 +44,10 @@ class _OnBoardingViewTabletState extends State<OnBoardingViewTablet> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Gap(height * 0.15),
-              SizedBox(
-                width:360.w,
-                child: Image.asset(
-                  widget.onBoardingImagesList[index],
-                  fit: BoxFit.fitWidth,
-                ),
+              Image.asset(
+                widget.onBoardingImagesList[index],
+                fit: BoxFit.cover,
+                height: 600,
               ),
               Padding(
                 padding: EdgeInsets.symmetric(

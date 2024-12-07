@@ -44,13 +44,14 @@ class NextIndicator extends StatelessWidget {
       child: currentIndex == onBoardingImagesList.length - 1
           ? Text(
               'get_started'.tr(),
-              style:
-                  AppStyles.style50014(context: context, color: Colors.white),
+              style: isTablet
+                  ? AppStyles.styleBold22(context: context, color: Colors.white)
+                  : AppStyles.style50014(context: context, color: Colors.white),
             )
-          :  Icon(
-             isEn? Icons.arrow_forward_ios: Icons.arrow_back_ios_sharp,
+          : Icon(
+              isEn ? Icons.arrow_forward_ios : Icons.arrow_back_ios_sharp,
               color: Colors.white,
-        size: isTablet?32:24,
+              size: isTablet ? 32 : 24,
             ),
     );
   }

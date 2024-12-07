@@ -1,3 +1,4 @@
+import 'package:authentication_app/core/constants/font_styles.dart';
 import 'package:authentication_app/core/helpers/extentions.dart';
 import 'package:authentication_app/features/log_in/screens/login_view.dart';
 import 'package:easy_localization/easy_localization.dart' as local;
@@ -27,7 +28,7 @@ class SkipButton extends StatelessWidget {
           style: TextButton.styleFrom(foregroundColor: Colors.black),
           child: Text(
             'skip'.tr(),
-            style: isTablet ? TextStyle(fontSize: 10.sp) : null,
+            style: isTablet ? AppStyles.styleRegular22(context: context) :AppStyles.style40016(context: context)
           )),
     );
   }
