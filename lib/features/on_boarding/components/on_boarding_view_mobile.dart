@@ -76,7 +76,8 @@ class _OnBoardingViewMobileState extends State<OnBoardingViewMobile> {
         const SkipButton(),
         Positioned(
           bottom: height * 0.02,
-          right: 0,
+          right:widget.isEn? null:0,
+          left:widget.isEn?   0:null,
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20.0),
             child: GestureDetector(

@@ -1,6 +1,7 @@
 import 'package:authentication_app/core/components/custom_button.dart';
 import 'package:authentication_app/core/constants/app_colors.dart';
 import 'package:authentication_app/core/constants/font_styles.dart';
+import 'package:authentication_app/core/helpers/extentions.dart';
 import 'package:authentication_app/features/log_in/screens/login_view.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
@@ -41,13 +42,14 @@ class ForgetPassword extends StatelessWidget {
                     ),
                     Gap(ratio * 8),
                     Align(
-                      alignment: Alignment.centerLeft,
+                      alignment:isEn? Alignment.centerLeft:Alignment.centerRight,
                       child: SizedBox(
                         width: ratio * 300,
                         child: Text(
                           'forget_password_desc'.tr(),
                           style: AppStyles.style40014(
-                              context: context, color: Colors.white),
+                              context: context, color: Colors.white, ),
+
                         ),
                       ),
                     ),
