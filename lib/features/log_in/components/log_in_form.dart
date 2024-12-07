@@ -1,3 +1,4 @@
+import 'package:authentication_app/core/helpers/extentions.dart';
 import 'package:authentication_app/core/router/router.dart';
 import 'package:authentication_app/features/log_in/screens/login_view.dart';
 import 'package:easy_localization/easy_localization.dart';
@@ -26,10 +27,13 @@ class LogInForm extends StatelessWidget {
         children: [
           Text(
             'email'.tr(),
-            style: AppStyles.styleRegular14(
-                context: context, color: AppColors.darkBlue),
+            style: isTablet
+                ? AppStyles.styleRegular18(
+                    context: context, color: AppColors.darkBlue)
+                : AppStyles.styleRegular14(
+                    context: context, color: AppColors.darkBlue),
           ),
-          Gap(ratio * 8),
+          Gap(isTablet ? 10 * ratio : ratio * 5),
           CustomTextField(
             controller: emailController,
             hint: 'pleaseEnterEmail'.tr(),
@@ -47,13 +51,16 @@ class LogInForm extends StatelessWidget {
               return null;
             },
           ),
-          Gap(ratio * 16),
+          Gap(isTablet ? 32 * ratio : ratio * 16),
           Text(
             'password'.tr(),
-            style: AppStyles.styleRegular14(
-                context: context, color: AppColors.darkBlue),
+            style: isTablet
+                ? AppStyles.styleRegular18(
+                    context: context, color: AppColors.darkBlue)
+                : AppStyles.styleRegular14(
+                    context: context, color: AppColors.darkBlue),
           ),
-          Gap(ratio * 5),
+          Gap(isTablet ? 10 * ratio : ratio * 5),
           CustomTextField(
             hint: '********',
             controller: passwordController,
@@ -71,7 +78,7 @@ class LogInForm extends StatelessWidget {
               return null;
             },
           ),
-          Gap(ratio * 8),
+          Gap(isTablet ? 12 * ratio : ratio * 8),
           Align(
               alignment: AlignmentDirectional.centerEnd,
               child: InkWell(
@@ -82,14 +89,22 @@ class LogInForm extends StatelessWidget {
                   children: [
                     Text(
                       'forget_password'.tr(),
-                      style: AppStyles.styleRegular14(
-                          context: context, color: AppColors.primaryBlue),
+                      style: isTablet
+                          ? AppStyles.styleRegular18(
+                              context: context, color: AppColors.primaryBlue)
+                          : AppStyles.styleRegular14(
+                              context: context, color: AppColors.primaryBlue),
                     ),
                     Positioned(
                       bottom: 0,
                       child: Container(
                         width: 'forget_password'.tr().length *
-                            (AppStyles.styleRegular14(
+                            (
+
+                                isTablet
+                                    ? AppStyles.styleRegular18(
+                                    context: context, color: AppColors.primaryBlue).fontSize!
+                                    :    AppStyles.styleRegular14(
                                         decoration: TextDecoration.underline,
                                         context: context,
                                         color: AppColors.primaryBlue)
@@ -103,7 +118,7 @@ class LogInForm extends StatelessWidget {
                   ],
                 ),
               )),
-          Gap(ratio * 16),
+          Gap(isTablet ? 32 * ratio : ratio * 16),
           CustomButton(
             backgroundColor: AppColors.primaryBlue,
             text: 'login'.tr(),

@@ -1,3 +1,4 @@
+import 'package:authentication_app/core/helpers/extentions.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,7 @@ class SocialIcons extends StatelessWidget {
       shape: const CircleBorder(),
       shadowColor: Colors.black54, // Customize shadow color
       child: Container(
-        padding: const EdgeInsets.all(8),
+        padding:  EdgeInsets.all(isTablet?16: 8),
         decoration: BoxDecoration(
           shape: BoxShape.circle,
           color: Colors.white, // Add background color for better contrast

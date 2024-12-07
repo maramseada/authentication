@@ -1,3 +1,4 @@
+import 'package:authentication_app/core/helpers/extentions.dart';
 import 'package:flutter/material.dart';
 import '../constants/app_colors.dart';
 import '../constants/font_styles.dart';
@@ -11,9 +12,9 @@ class LineText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        const Expanded(
+        Expanded(
           child: Divider(
-            thickness: .5, // Adjust for desired thickness
+            thickness: isTablet? .8:.5, // Adjust for desired thickness
             color: AppColors.greyTextColor,
           ),
         ),
@@ -22,15 +23,15 @@ class LineText extends StatelessWidget {
                EdgeInsets.symmetric(horizontal: padding.toDouble()), // Adjust spacing
           child: Text(
             text,
-            style: AppStyles.styleRegular14(
+            style:isTablet? AppStyles.styleRegular20(context: context,        color: AppColors.greyColor,): AppStyles.styleRegular14(
               context: context,
               color: AppColors.greyColor,
             ),
           ),
         ),
-        const Expanded(
+         Expanded(
           child: Divider(
-            thickness: .5,
+            thickness: isTablet? .8:.5, // Adjust for desired thickness
             color: AppColors.greyTextColor,
           ),
         ),

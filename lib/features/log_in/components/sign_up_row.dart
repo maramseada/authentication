@@ -1,3 +1,4 @@
+import 'package:authentication_app/core/helpers/extentions.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -13,23 +14,28 @@ class SignUpRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return              Row(
+    return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
           'dont_have_account'.tr(),
-          style: AppStyles.styleRegular14(context: context),
+          style:isTablet
+              ? AppStyles.styleRegular20(
+              context: context,)
+              : AppStyles.styleRegular14(context: context),
         ),
         Gap(10 * ratio),
         InkWell(
           onTap: () {
-            GlobalRouter.navigateTo( SignUpView());
+            GlobalRouter.navigateTo(const SignUpView());
           },
           child: Text(
             'signup'.tr(),
-            style: AppStyles.styleBold14(
-                context: context,
-                color: AppColors.primaryBlue),
+            style: isTablet
+                ? AppStyles.styleBold20(
+                    context: context, color: AppColors.primaryBlue)
+                : AppStyles.styleBold14(
+                    context: context, color: AppColors.primaryBlue),
           ),
         ),
       ],
