@@ -11,12 +11,12 @@
 
 ### On Boarding Screens
 <p align="left">
-  <img src="https://github.com/user-attachments/assets/cf9026da-8b96-4710-bc07-dba33e66f38a"  width="200">
-  <img src="https://github.com/user-attachments/assets/d01a9b65-e3f9-4d05-9c2d-4ebc17de3fbb" width="200">
-  <img src="https://github.com/user-attachments/assets/0bcc4053-a658-4b96-a342-6603fb8fc69c"  width="200">
-  <img src="https://github.com/user-attachments/assets/e4f56d19-ec87-4e9c-b0df-2d5d515cbf95"  width="200">
-  <img src="https://github.com/user-attachments/assets/23e160b1-4676-45fa-bd92-7e052979304e"  width="200">
-  <img src="https://github.com/user-attachments/assets/d37dedda-2d98-4e08-aae1-6a6eb7260564" width="200">
+  <img src="https://github.com/user-attachments/assets/0a085f1e-7713-4540-8eb2-fbe5af0088a6"  width="200">
+  <img src="https://github.com/user-attachments/assets/f10927ca-7de2-487b-bdbc-c106815c876b" width="200">
+  <img src="https://github.com/user-attachments/assets/b66c84f3-d644-47e2-a583-eb252b433eb4"  width="200">
+  <img src="https://github.com/user-attachments/assets/a7bfc17d-46d2-44cc-8d83-c8d65c680a52"  width="200">
+  <img src="https://github.com/user-attachments/assets/2bf9894b-38fa-42cd-a903-e3b6b5bfd46e"  width="200">
+  <img src="https://github.com/user-attachments/assets/c1abc625-af62-445e-ad06-d26252b5c4f7" width="200">
 </p>
 
 ### Login and Signup View
