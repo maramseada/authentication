@@ -4,28 +4,37 @@
 
 ### Splash Screen and Langugae selection screen 
 <p align="left">
-  <img src="https://github.com/user-attachments/assets/1a85f56c-eb58-4544-94d0-8fa5b2605712" alt="Simulator Screenshot" width="200">
-  <img src="https://github.com/user-attachments/assets/785507ab-d5f3-4101-bd57-ba8f273824cd" alt="Simulator Screenshot 1" width="200">
+  <img src="https://github.com/user-attachments/assets/1a85f56c-eb58-4544-94d0-8fa5b2605712"  width="200">
+  <img src="https://github.com/user-attachments/assets/65b6b25a-6a50-40a5-9d8b-271fd7fbc761" width="200">
+  <img src="https://github.com/user-attachments/assets/b876d809-f842-4509-809a-52e1d4ee8bdb"  width="200">
+
 </p>
 ### On Boarding Screens
 <p align="left">
-  <img src="https://github.com/user-attachments/assets/cf9026da-8b96-4710-bc07-dba33e66f38a" alt="Simulator Screenshot 2" width="200">
-  <img src="https://github.com/user-attachments/assets/0bcc4053-a658-4b96-a342-6603fb8fc69c" alt="Simulator Screenshot 3" width="200">
-  <img src="https://github.com/user-attachments/assets/23e160b1-4676-45fa-bd92-7e052979304e" alt="Simulator Screenshot 4" width="200">
-  <img src="https://github.com/user-attachments/assets/d01a9b65-e3f9-4d05-9c2d-4ebc17de3fbb" alt="Simulator Screenshot 5" width="200">
-  <img src="https://github.com/user-attachments/assets/e4f56d19-ec87-4e9c-b0df-2d5d515cbf95" alt="Simulator Screenshot 6" width="200">
-  <img src="https://github.com/user-attachments/assets/d37dedda-2d98-4e08-aae1-6a6eb7260564" alt="Simulator Screenshot 7" width="200">
+  <img src="https://github.com/user-attachments/assets/cf9026da-8b96-4710-bc07-dba33e66f38a"  width="200">
+  <img src="https://github.com/user-attachments/assets/d01a9b65-e3f9-4d05-9c2d-4ebc17de3fbb" width="200">
+  <img src="https://github.com/user-attachments/assets/0bcc4053-a658-4b96-a342-6603fb8fc69c"  width="200">
+  <img src="https://github.com/user-attachments/assets/e4f56d19-ec87-4e9c-b0df-2d5d515cbf95"  width="200">
+  <img src="https://github.com/user-attachments/assets/23e160b1-4676-45fa-bd92-7e052979304e"  width="200">
+  <img src="https://github.com/user-attachments/assets/d37dedda-2d98-4e08-aae1-6a6eb7260564" width="200">
 </p>
 
+### Login and Signup View
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/ce7d0939-b8b2-4ed4-808e-79a6fb2f6811" alt="Simulator Screenshot 8" width="200">
-  <img src="https://github.com/user-attachments/assets/30e6be88-ea97-4352-bb89-848dacdfa09f" alt="Simulator Screenshot 9" width="200">
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/61727c11-e02a-43fd-be4d-5974d99614ee"  width="200">
+  <img src="https://github.com/user-attachments/assets/54c29459-3b47-4749-b681-7ad5e58bf049"  width="200">
+ <img src="https://github.com/user-attachments/assets/1e8612a5-3825-43f0-9516-7bda672af786"  width="200">
+  <img src="https://github.com/user-attachments/assets/0a88775c-74bd-49ee-8a4b-a0ecc3fbfc36"  width="200">
 </p>
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/29109899-ae28-46c6-8c89-a4b57ca543f9" alt="Simulator Screenshot 10" width="200">
-  <img src="https://github.com/user-attachments/assets/a6fddc49-28a1-4480-a00e-9e8e2c8bda20" alt="Simulator Screenshot 11" width="200">
+### Forget Password and Otp View
+
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/d88a3e7d-2f56-4101-8980-980d111984a1" width="200">
+  <img src="https://github.com/user-attachments/assets/c8699c0c-88ca-4ee8-a8cd-c24e759d98a3" width="200">
+  <img src="https://github.com/user-attachments/assets/f9ad4cf4-0ec4-48d2-b1ce-a225ddaafddd"  width="200">
+  <img src="https://github.com/user-attachments/assets/adf82b2a-ca57-4e2b-9133-8b9019821249"  width="200">
 </p>
 
 This project is a starting point for a Flutter application.
