@@ -33,7 +33,7 @@ class _LanguageScreenTabletState extends State<LanguageScreenTablet> {
           Expanded(
             flex: 1,
             child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: ratio * 12.0),
+              padding: EdgeInsets.symmetric(horizontal: ratio * 32.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.end,
