@@ -1,5 +1,5 @@
 # authentication_app# An Authentication Flutter Project
-
+authentication ui app using flutter including splash screen , language selection screen, on boarding, login , signup, forget password and otp through mail all translated to arabic and english using easy localization
 ## App Screenshots
 
 ### Splash Screen and Langugae selection screen 
