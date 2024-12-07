@@ -173,7 +173,12 @@ class _LanguageScreenMobileState extends State<LanguageScreenMobile> {
                     CustomButton(
                       text: 'next'.tr(),
                       width: 280,
-                      radius: 10,
+                      style: widget.isTablet
+                          ? AppStyles.styleRegular22(
+                        context: context,
+                        color: AppColors.whiteTextColor,
+                      )
+                          : null,  radius: 10,
                       padding: EdgeInsets.symmetric(vertical: 12*ratio ),
                       onPressed: () async {
                         if (lang == true) {

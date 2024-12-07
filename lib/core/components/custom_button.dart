@@ -56,10 +56,14 @@ class CustomButton extends StatelessWidget {
             Text(text,
                 textAlign: textAlign,
                 style: style ??
+
                     AppStyles.style50016(
                       context: context,
                       color: textColor ?? AppColors.whiteTextColor,
-                    )),
+                    ),
+
+
+            ),
       ),
     );
   }

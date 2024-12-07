@@ -99,17 +99,18 @@ class LogInForm extends StatelessWidget {
                       bottom: 0,
                       child: Container(
                         width: 'forget_password'.tr().length *
-                            (
-
-                                isTablet
-                                    ? AppStyles.styleRegular18(
-                                    context: context, color: AppColors.primaryBlue).fontSize!
-                                    :    AppStyles.styleRegular14(
-                                        decoration: TextDecoration.underline,
+                            (isTablet
+                                ? AppStyles.styleRegular18(
                                         context: context,
                                         color: AppColors.primaryBlue)
-                                    .fontSize ??
-                                16) *
+                                    .fontSize!
+                                : AppStyles.styleRegular14(
+                                            decoration:
+                                                TextDecoration.underline,
+                                            context: context,
+                                            color: AppColors.primaryBlue)
+                                        .fontSize ??
+                                    16) *
                             0.6, // Dynamically set width
                         height: 1,
                         color: AppColors.primaryBlue,
@@ -122,6 +123,12 @@ class LogInForm extends StatelessWidget {
           CustomButton(
             backgroundColor: AppColors.primaryBlue,
             text: 'login'.tr(),
+            style: isTablet
+                ? AppStyles.styleRegular22(
+                    context: context,
+                    color: AppColors.whiteTextColor,
+                  )
+                : null,
             radius: 6,
             onPressed: () {
               if (_formKey.currentState!.validate()) {

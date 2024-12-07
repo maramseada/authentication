@@ -105,7 +105,12 @@ class ForgetPassword extends StatelessWidget {
                   Gap(ratio * 18),
                   CustomButton(
                     text: 'send_otp'.tr(),
-                    onPressed: () {
+                    style: isTablet
+                        ? AppStyles.styleRegular22(
+                      context: context,
+                      color: AppColors.whiteTextColor,
+                    )
+                        : null,   onPressed: () {
                       if (_formKey.currentState!.validate()) {
                         showModalBottomSheet(
                           context: context,

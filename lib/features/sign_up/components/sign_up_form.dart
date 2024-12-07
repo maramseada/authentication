@@ -1,3 +1,4 @@
+import 'package:authentication_app/core/helpers/extentions.dart';
 import 'package:authentication_app/core/router/router.dart';
 import 'package:authentication_app/features/log_in/screens/login_view.dart';
 import 'package:easy_localization/easy_localization.dart';
@@ -8,13 +9,14 @@ import '../../../core/components/custom_text_field.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/constants.dart';
 import '../../../core/constants/font_styles.dart';
+
 class SignUpForm extends StatelessWidget {
-   SignUpForm({super.key});
+  SignUpForm({super.key});
   final _formKey = GlobalKey<FormState>(); // Global key for the form
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
   final TextEditingController reEnterPasswordController =
-  TextEditingController();
+      TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Form(
@@ -23,13 +25,17 @@ class SignUpForm extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Gap(50 * ratio),
+          isTablet ? Gap(120 * ratio) : Gap(50 * ratio),
           Text(
             'full_name'.tr(),
-            style: AppStyles.styleRegular14(
+            style: isTablet
+                ? AppStyles.styleRegular18(
+                context: context, color: AppColors.darkBlue)
+                : AppStyles.styleRegular14(
                 context: context, color: AppColors.darkBlue),
+
           ),
-          Gap(ratio * 5),
+          isTablet ? Gap(ratio * 10) :     Gap(ratio * 5),
           CustomTextField(
             hint: 'enter_full_name'.tr(),
             hintStyle: AppStyles.styleRegular14(
@@ -45,13 +51,17 @@ class SignUpForm extends StatelessWidget {
               return null;
             },
           ),
-          Gap(ratio * 16),
+          isTablet ? Gap(ratio * 32) : Gap(ratio * 22),
           Text(
             'email'.tr(),
-            style: AppStyles.styleRegular14(
+            style: isTablet
+                ? AppStyles.styleRegular18(
+                context: context, color: AppColors.darkBlue)
+                : AppStyles.styleRegular14(
                 context: context, color: AppColors.darkBlue),
+
           ),
-          Gap(ratio * 5),
+          isTablet ? Gap(ratio * 10) :     Gap(ratio * 5),
           CustomTextField(
             controller: emailController,
             hint: 'pleaseEnterEmail'.tr(),
@@ -69,13 +79,17 @@ class SignUpForm extends StatelessWidget {
               return null;
             },
           ),
-          Gap(ratio * 16),
+          isTablet ? Gap(ratio * 32) : Gap(ratio * 22),
           Text(
             'password'.tr(),
-            style: AppStyles.styleRegular14(
+            style: isTablet
+                ? AppStyles.styleRegular18(
+                context: context, color: AppColors.darkBlue)
+                : AppStyles.styleRegular14(
                 context: context, color: AppColors.darkBlue),
+
           ),
-          Gap(ratio * 5),
+          isTablet ? Gap(ratio * 10) :     Gap(ratio * 5),
           CustomTextField(
             hint: '********',
             controller: passwordController,
@@ -93,13 +107,17 @@ class SignUpForm extends StatelessWidget {
               return null;
             },
           ),
-          Gap(ratio * 16),
+          isTablet ? Gap(ratio * 32) : Gap(ratio * 22),
           Text(
             'reenter_password'.tr(),
-            style: AppStyles.styleRegular14(
+            style: isTablet
+                ? AppStyles.styleRegular18(
+                context: context, color: AppColors.darkBlue)
+                : AppStyles.styleRegular14(
                 context: context, color: AppColors.darkBlue),
+
           ),
-          Gap(ratio * 5),
+          isTablet ? Gap(ratio * 10) :     Gap(ratio * 5),
           CustomTextField(
             hint: '********',
             controller: reEnterPasswordController,
@@ -112,7 +130,6 @@ class SignUpForm extends StatelessWidget {
                 return 'please_fill_field'.tr();
               }
               if (value.length < 6) {
-
                 return 'password_validation'.tr();
               }
 
@@ -122,11 +139,16 @@ class SignUpForm extends StatelessWidget {
               return null;
             },
           ),
-          Gap(ratio * 22),
+          isTablet ? Gap(ratio * 40) : Gap(ratio * 22),
           CustomButton(
             backgroundColor: AppColors.primaryBlue,
             text: 'signup'.tr(),
-            radius: 6,
+            style: isTablet
+                ? AppStyles.styleRegular22(
+              context: context,
+              color: AppColors.whiteTextColor,
+            )
+                : null,   radius: 6,
             onPressed: () {
               if (_formKey.currentState!.validate()) {
                 print('kuh');
@@ -135,13 +157,15 @@ class SignUpForm extends StatelessWidget {
               }
             },
           ),
-          Gap(ratio * 32),
+          isTablet ? const Spacer() : Gap(ratio * 32),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
                 'have_account'.tr(),
-                style: AppStyles.styleRegular14(context: context),
+                style:  isTablet? AppStyles.styleRegular20(
+    context: context,)
+        : AppStyles.styleRegular14(context: context),
               ),
               Gap(10 * ratio),
               InkWell(
@@ -150,9 +174,12 @@ class SignUpForm extends StatelessWidget {
                 },
                 child: Text(
                   'login'.tr(),
-                  style: AppStyles.styleBold14(
-                      context: context,
-                      color: AppColors.primaryBlue),
+                  style: isTablet
+                      ? AppStyles.styleBold20(
+                      context: context, color: AppColors.primaryBlue)
+                      : AppStyles.styleBold14(
+                      context: context, color: AppColors.primaryBlue),
+
                 ),
               ),
             ],
