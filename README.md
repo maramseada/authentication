@@ -7,8 +7,8 @@
   <img src="https://github.com/user-attachments/assets/1a85f56c-eb58-4544-94d0-8fa5b2605712"  width="200">
   <img src="https://github.com/user-attachments/assets/65b6b25a-6a50-40a5-9d8b-271fd7fbc761" width="200">
   <img src="https://github.com/user-attachments/assets/b876d809-f842-4509-809a-52e1d4ee8bdb"  width="200">
-
 </p>
+
 ### On Boarding Screens
 <p align="left">
   <img src="https://github.com/user-attachments/assets/cf9026da-8b96-4710-bc07-dba33e66f38a"  width="200">
