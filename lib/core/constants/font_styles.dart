@@ -502,5 +502,13 @@ class AppStyles {
  decoration: decoration,
       fontWeight: FontWeight.w700,
     );
+  } static TextStyle styleBold52({required BuildContext context, Color? color, TextDecoration? decoration}) {
+    return TextStyle(
+      color: color ?? Colors.black,
+      fontSize: getResponsiveFontSize(context, fontSize: 52),
+      fontFamily: 'ExpoArabic',           decorationColor:  color ?? Colors.black,
+ decoration: decoration,
+      fontWeight: FontWeight.w700,
+    );
   }
 }

@@ -9,26 +9,13 @@ class SplashScreenMobile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-
-        // Positioned(
-        //   bottom: 300,
-        //   right: 50,
-        //   child: Image.asset(
-        //     'assets/images/light.png',
-        //     height: 100,
-        //   ),
-        // ),
-        Center(
-          child: Padding(
-            padding: const EdgeInsets.all(40),
-            child: Image.asset(
-             'assets/images/logo.png',
-            ),
-          ),
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.all(40),
+        child: Image.asset(
+         'assets/images/logo.png',
         ),
-      ],
+      ),
     );
   }
 }
