@@ -1,4 +1,5 @@
 import 'package:authentication_app/core/constants/font_styles.dart';
+import 'package:authentication_app/core/helpers/extentions.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 
@@ -46,9 +47,10 @@ class NextIndicator extends StatelessWidget {
               style:
                   AppStyles.style50014(context: context, color: Colors.white),
             )
-          : const Icon(
-              Icons.arrow_forward_ios,
+          :  Icon(
+             isEn? Icons.arrow_forward_ios: Icons.arrow_back_ios_sharp,
               color: Colors.white,
+        size: isTablet?32:24,
             ),
     );
   }
