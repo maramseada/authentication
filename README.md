@@ -3,8 +3,8 @@
 ## App Screenshots
 
 ### Splash Screen and Langugae selection screen 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/1a85f56c-eb58-4544-94d0-8fa5b2605712" alt="Simulator Screenshot" width="300">
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/1a85f56c-eb58-4544-94d0-8fa5b2605712" alt="Simulator Screenshot" width="200">
   <img src="https://github.com/user-attachments/assets/785507ab-d5f3-4101-bd57-ba8f273824cd" alt="Simulator Screenshot 1" width="200">
 </p>
 ### On Boarding Screens
