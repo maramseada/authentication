@@ -24,12 +24,12 @@ class LogInForm extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-Text(
+          Text(
             'email'.tr(),
             style: AppStyles.styleRegular14(
                 context: context, color: AppColors.darkBlue),
-          ),          Gap(ratio * 8),
-
+          ),
+          Gap(ratio * 8),
           CustomTextField(
             controller: emailController,
             hint: 'pleaseEnterEmail'.tr(),
@@ -78,17 +78,34 @@ Text(
                 onTap: () {
                   GlobalRouter.navigateTo(ForgetPassword());
                 },
-                child: Text(
-                  'forget_password'.tr(),
-                  style: AppStyles.styleRegular14(
-                      decoration: TextDecoration.underline,
-                      context: context,
-                      color: AppColors.lightPurple),
+                child: Stack(
+                  children: [
+                    Text(
+                      'forget_password'.tr(),
+                      style: AppStyles.styleRegular14(
+                          context: context, color: AppColors.primaryBlue),
+                    ),
+                    Positioned(
+                      bottom: 0,
+                      child: Container(
+                        width: 'forget_password'.tr().length *
+                            (AppStyles.styleRegular14(
+                                        decoration: TextDecoration.underline,
+                                        context: context,
+                                        color: AppColors.primaryBlue)
+                                    .fontSize ??
+                                16) *
+                            0.6, // Dynamically set width
+                        height: 1,
+                        color: AppColors.primaryBlue,
+                      ),
+                    ),
+                  ],
                 ),
               )),
           Gap(ratio * 16),
           CustomButton(
-            backgroundColor: AppColors.lightPurple,
+            backgroundColor: AppColors.primaryBlue,
             text: 'login'.tr(),
             radius: 6,
             onPressed: () {
@@ -99,8 +116,6 @@ Text(
               }
             },
           ),
-
-
         ],
       ),
     );

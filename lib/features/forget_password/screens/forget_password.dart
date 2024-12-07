@@ -139,7 +139,7 @@ class ForgetPassword extends StatelessWidget {
                           child: Text(
                             'login'.tr(),
                             style: AppStyles.styleBold14(
-                                context: context, color: AppColors.lightPurple),
+                                context: context, color: AppColors.primaryBlue),
                           ),
                         ),
                       ],

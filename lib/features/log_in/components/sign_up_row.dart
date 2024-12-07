@@ -29,7 +29,7 @@ class SignUpRow extends StatelessWidget {
             'signup'.tr(),
             style: AppStyles.styleBold14(
                 context: context,
-                color: AppColors.lightPurple),
+                color: AppColors.primaryBlue),
           ),
         ),
       ],

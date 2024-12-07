@@ -40,7 +40,7 @@ class SignUpForm extends StatelessWidget {
                 return 'please_fill_field'.tr();
               }
               if (value.length < 3) {
-                return 'name must bet bigger than 2 '.tr();
+                return 'name_valid'.tr();
               }
               return null;
             },
@@ -117,14 +117,14 @@ class SignUpForm extends StatelessWidget {
               }
 
               if (value != passwordController.text) {
-                return 'not match '.tr();
+                return 'passwords_do_not_match'.tr();
               }
               return null;
             },
           ),
           Gap(ratio * 22),
           CustomButton(
-            backgroundColor: AppColors.lightPurple,
+            backgroundColor: AppColors.primaryBlue,
             text: 'signup'.tr(),
             radius: 6,
             onPressed: () {
@@ -152,7 +152,7 @@ class SignUpForm extends StatelessWidget {
                   'login'.tr(),
                   style: AppStyles.styleBold14(
                       context: context,
-                      color: AppColors.lightPurple),
+                      color: AppColors.primaryBlue),
                 ),
               ),
             ],

@@ -45,8 +45,10 @@
   "onboarding2": "Together, we rise! Support and mentorship are just a step away.",
   "onboarding3": "Your growth is our priority. Let’s climb to success.",
   "skip": "Skip",
-  "get_started": "Get Started"
-
-
-
+  "get_started": "Get Started",
+  "choose_language": "Choose Language",
+  "choose_language_desc": "Select your preferred Language",
+  "next": "Next",
+  "not_match": "Passwords do not match",
+  "name_valid": "name must be at least 2 Characters"
 }
